@@ -1,0 +1,175 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* ===============================
+   PAGE LAYOUT
+================================ */
+
+.page {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.header {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #60a5fa;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ===============================
+   CARDS
+================================ */
+
+.card,
+.answer-panel {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.answer-panel {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* ===============================
+   TITLES
+================================ */
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #a78bfa;
+}
+
+/* ===============================
+   INPUTS
+================================ */
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: white;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.primary-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background: #334155;
+}
+
+/* ===============================
+   TEXT STYLES
+================================ */
+
+.project-id {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+  word-break: break-all;
+}
+
+.answer-box {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.source-card {
+  margin-top: 15px;
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.file-path {
+  font-family: monospace;
+  font-size: 13px;
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.snippet {
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.pre {
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
