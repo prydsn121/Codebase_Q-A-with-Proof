@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./index.css";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://codebase-q-a-with-proof.onrender.com";
 
 function App() {
   const [githubUrl, setGithubUrl] = useState("");
