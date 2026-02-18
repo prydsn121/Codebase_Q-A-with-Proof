@@ -3,6 +3,7 @@ uvicorn
 python-dotenv
 pydantic
 sqlalchemy
+python-3.11.9
 
 openai
 chromadb
